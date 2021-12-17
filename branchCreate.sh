@@ -3,10 +3,10 @@ echo hello world
 x=1
 y=1
 j=1
-while [ $x -le 10 ]
+while [ $x -le 1000 ]
 do
   echo "Welcome $x times"
-  string=Testing_PR_$((x))
+  string=AA_PR_$((x))
   git branch $string
   git checkout -b $string
   git push -u origin $string
@@ -17,7 +17,7 @@ do
   sh ./createCOmmit.sh
   rm -rf random*
   git add .
-  git commit -m "ASSS"
+  git commit -m "SDDD"
   git push
 done
 
